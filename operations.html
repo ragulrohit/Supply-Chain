@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stackly SCM Dashboard</title>
+
+    <link rel="stylesheet" href="operations.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-bolt"></i>
+          <h2>Stackly</h2>
+        </div>
+
+        <div class="profile">
+          <span class="badge">Technology</span>
+          <h3>Income</h3>
+          <p>SUPPLY CHAIN</p>
+        </div>
+
+        <ul class="menu">
+          <li class="active">
+            <i class="fa-solid fa-chart-pie"></i>
+            <a href="Not found.html">Dashboard</a>
+            
+          </li>
+
+          <li>
+            <i class="fa-solid fa-box"></i>
+            <a href="Not found.html">Shipments</a>
+            
+          </li>
+
+          <li>
+            <i class="fa-solid fa-warehouse"></i>
+            <a href="Not found.html">Warehouses</a>
+            
+          </li>
+
+          <li>
+            <i class="fa-solid fa-truck"></i>
+            <a href="Not found.html">Fleet Tracking</a>
+            
+          </li>
+
+          <li>
+            <i class="fa-solid fa-chart-column"></i>
+            <a href="Not found.html">Inventory</a>
+            
+          </li>
+
+          <li>
+            <i class="fa-solid fa-circle-question"></i>
+            <a href="Not found.html">Not Found</a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="topbar">
+          <button class="logout" id="logoutBtn">Log out</button>
+        </header>
+
+        <div class="dashboard-header">
+          <div>
+            <h1>Supply Dashboard</h1>
+
+            <p>Operations Chain, and network performance in one glance.</p>
+          </div>
+
+          <button class="export-btn">Export</button>
+        </div>
+
+        <!-- KPI Cards -->
+
+        <section class="stats">
+          <div class="stat-card">
+            <h2>284</h2>
+            <p>Shipments</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>847</h2>
+            <p>Vehicles</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>3,142</h2>
+            <p>Clients</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>₹2.4Cr</h2>
+            <p>Revenue</p>
+          </div>
+        </section>
+
+        <!-- Table -->
+
+        <div class="table-card">
+          <h2>All Clients</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>SHIPMENT</th>
+                <th>Total</th>
+                <th>GST</th>
+                <th>Agent</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Trucking</td>
+                <td>302</td>
+                <td>98.7%</td>
+                <td>John</td>
+              </tr>
+
+              <tr>
+                <td>SHIPPING</td>
+                <td>220</td>
+                <td>99.1%</td>
+                <td>David</td>
+              </tr>
+
+              <tr>
+                <td>Analzing</td>
+                <td>320</td>
+                <td>98.0%</td>
+                <td>Breton</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <script src="./operations.js"></script>
+    </div>
+  </body>
+</html>

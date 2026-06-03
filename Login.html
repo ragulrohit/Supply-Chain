@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="index.html" class="back-home"> ← Back to Home </a>
+
+    <div class="container">
+      <div class="logo">
+        <h2>STACKLY SCM</h2>
+        <p>Supply Chain Management Portal</p>
+      </div>
+
+      <div class="user-tabs">
+        <button class="active" onclick="showForm('vendor')">Vendor</button>
+
+        <button onclick="showForm('operations')">Operations</button>
+      </div>
+
+      <!-- Vendor Login -->
+      <form id="vendorForm" class="login-form">
+        <input type="email" placeholder="Vendor Email" required />
+
+        <input type="password" placeholder="Password" required />
+
+        <input type="text" placeholder="Vendor ID" required />
+
+        <a href="Not found.html" class="forgot"> Forgot Password? </a>
+
+        <button type="submit" class="login-btn">Vendor Login</button>
+      </form>
+
+      <!-- Operations Login -->
+      <form id="operationsForm" class="login-form hidden">
+        <input type="email" placeholder="Corporate Email" required />
+
+        <input type="password" placeholder="Password" required />
+
+        <select>
+          <option>Select Department</option>
+          <option>Warehouse</option>
+          <option>Transportation</option>
+          <option>Procurement</option>
+          <option>Planning</option>
+        </select>
+
+        <a href="Not found.html" class="forgot"> Forgot Password? </a>
+
+        <button type="submit" class="login-btn">Operations Login</button>
+      </form>
+
+      <div class="portal-features">
+        <div>📦 Track Shipments</div>
+        <div>🏭 Warehouse Visibility</div>
+        <div>🚚 Fleet Management</div>
+        <div>📊 Inventory Analytics</div>
+      </div>
+    </div>
+
+    <script src="Login.js"></script>
+  </body>
+</html>
