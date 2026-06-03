@@ -29,7 +29,9 @@ body {
   background:
     radial-gradient(circle at top, rgba(14, 165, 233, 0.14), transparent 25%),
     linear-gradient(135deg, #020617 0%, #07111f 45%, #111827 100%);
-  transition: opacity 0.45s ease, visibility 0.45s ease;
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
 }
 
 .stackly-loader.hide {
@@ -112,9 +114,15 @@ body {
 }
 
 @keyframes barGrow {
-  0% { transform: translateX(-100%); }
-  50% { transform: translateX(120%); }
-  100% { transform: translateX(320%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
 }
 
 .services-banner {
