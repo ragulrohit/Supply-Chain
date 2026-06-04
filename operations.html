@@ -3,119 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Stackly SCM Dashboard</title>
-
     <link rel="stylesheet" href="operations.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
   <body>
-    <div class="dashboard">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <div class="logo">
-          <i class="fa-solid fa-bolt"></i>
-          <h2>Stackly</h2>
+    <main class="main-content">
+      <aside class="dashboard-sidebar">
+        <div class="dashboard-brand">
+          <a href="index.html" aria-label="Stackly home">
+            <img src="./Images/Stackly_logo.webp" alt="Stackly Logo" />
+          </a>
+          <a class="back-home-link" href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+          </a>
         </div>
 
-        <div class="profile">
-          <span class="badge">Technology</span>
-          <h3>Income</h3>
-          <p>SUPPLY CHAIN</p>
-        </div>
+       <div class="user-profile" aria-label="User profile">
+  <img
+    class="user-avatar"
+    src="./Images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.webp"
+    alt="User avatar"
+    width="48"
+    height="48"
+  />
+  <div class="user-meta">
+    <p class="user-name" id="sidebarUserName">User</p>
+    <p class="user-role">Welcome Buddy</p>
+    <span class="user-status" title="Online" aria-label="Online"></span>
+  </div>
+</div>
 
-        <ul class="menu">
+        
+
+        <ul class="dashboard-menu">
           <li class="active">
-            <i class="fa-solid fa-chart-pie"></i>
-            <a href="Not found.html">Dashboard</a>
-            
+            <a href="operations.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
           </li>
-
           <li>
-            <i class="fa-solid fa-box"></i>
-            <a href="pages/shipments.html">Shipments</a>
-            
+            <a href="pages/shipments.html"><i class="fa-solid fa-box"></i> Shipments</a>
           </li>
-
           <li>
-            <i class="fa-solid fa-warehouse"></i>
-            <a href="pages/warehouses.html">Warehouses</a>
-            
+            <a href="pages/warehouses.html"><i class="fa-solid fa-warehouse"></i> Warehouses</a>
           </li>
-
           <li>
-            <i class="fa-solid fa-truck"></i>
-            <a href="pages/fleet-tracking.html">Fleet Tracking</a>
-            
+            <a href="pages/fleet-tracking.html"><i class="fa-solid fa-truck"></i> Fleet Tracking</a>
           </li>
-
           <li>
-            <i class="fa-solid fa-chart-column"></i>
-            <a href="pages/inventory.html">Inventory</a>
-            
+            <a href="pages/inventory.html"><i class="fa-solid fa-chart-column"></i> Inventory</a>
           </li>
-
-         
           <li>
-            <i class="fa-solid fa-circle-question"></i>
-            <a href="pages/support.html">Support</a>
+            <a href="pages/support.html"><i class="fa-solid fa-circle-question"></i> Support</a>
+          </li>
+          <li class="logout-menu-item">
+            <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
           </li>
         </ul>
       </aside>
 
-      <!-- Main Content -->
-      <main class="main-content">
+      <section class="dashboard-main">
         <header class="topbar">
-          <button class="logou" id="logoutBt"><a class="back-home-l" href="Login.html">Log out</a></button>
-        </header>
-
-        <div class="dashboard-header">
           <div>
+            <p class="operations-welcome">
+              Welcome, <span id="operationsName">Operations</span>
+            </p>
             <h1>Supply Dashboard</h1>
-
             <p>Operations Chain, and network performance in one glance.</p>
           </div>
 
           <button class="export-btn">Export</button>
-        </div>
+        </header>
 
-        <!-- KPI Cards -->
-
-        <section class="stats">
-          <div class="stat-card">
-            <h2>284</h2>
+        <section class="stats-grid">
+          <div class="card">
             <p>Shipments</p>
+            <h2>284</h2>
           </div>
 
-          <div class="stat-card">
-            <h2>847</h2>
+          <div class="card">
             <p>Vehicles</p>
+            <h2>847</h2>
           </div>
 
-          <div class="stat-card">
-            <h2>3,142</h2>
+          <div class="card">
             <p>Clients</p>
+            <h2>3,142</h2>
           </div>
 
-          <div class="stat-card">
-            <h2>₹2.4Cr</h2>
+          <div class="card">
             <p>Revenue</p>
+            <h2>Rs.2.4Cr</h2>
           </div>
         </section>
 
-        <!-- Table -->
-
-        <div class="table-card">
-          <h2>All Clients</h2>
+        <section class="table-card">
+          <div class="table-header">
+            <h2>All Clients</h2>
+          </div>
 
           <table>
             <thead>
               <tr>
-                <th>SHIPMENT</th>
+                <th>Shipment</th>
                 <th>Total</th>
                 <th>GST</th>
                 <th>Agent</th>
@@ -131,23 +124,24 @@
               </tr>
 
               <tr>
-                <td>SHIPPING</td>
+                <td>Shipping</td>
                 <td>220</td>
                 <td>99.1%</td>
                 <td>David</td>
               </tr>
 
               <tr>
-                <td>Analzing</td>
+                <td>Analyzing</td>
                 <td>320</td>
                 <td>98.0%</td>
                 <td>Breton</td>
               </tr>
             </tbody>
           </table>
-        </div>
-      </main>
+        </section>
+      </section>
+
       <script src="./operations.js"></script>
-    </div>
+    </main>
   </body>
 </html>

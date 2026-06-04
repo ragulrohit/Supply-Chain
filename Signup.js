@@ -53,9 +53,9 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     return;
   }
 
-  showStatus("Account created successfully. Redirecting...");
+  alert("Account created successfully.");
+  showStatus("Account created successfully. Redirecting to login...");
   setTimeout(() => {
-    globalThis.location.href =
-      accountType === "vendor" ? "vendor-dashboard.html" : "operations.html";
+    globalThis.location.href = "Login.html";
   }, 800);
 });

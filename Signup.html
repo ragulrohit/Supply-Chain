@@ -11,51 +11,78 @@
     <title>Sign Up</title>
     <style>
       .signup-brand {
-        position: absolute;
-        top: 68px;
-        left: 24px;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         justify-content: center;
-        width: 150px;
-        min-height: 58px;
+        width: clamp(110px, 22vw, 160px);
+        margin: 0 auto 18px;
         padding: 0;
         background: transparent;
         box-shadow: none;
-        transition: transform 0.25s ease;
-        z-index: 10;
+        transition:
+          transform 0.25s ease,
+          opacity 0.25s ease;
       }
 
       .signup-brand:hover {
         transform: translateY(-2px);
+        opacity: 0.92;
       }
 
       .signup-brand img {
         display: block;
-        max-width: 120px;
         width: 100%;
         height: auto;
         object-fit: contain;
       }
 
+      .or {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin: 16px 0;
+        color: #cbd5e1;
+        font-size: clamp(13px, 2.6vw, 15px);
+        font-weight: 600;
+        line-height: 1;
+        text-align: center;
+        text-transform: lowercase;
+      }
+
+      .or::before,
+      .or::after {
+        content: "";
+        flex: 1;
+        max-width: 130px;
+        height: 1px;
+        background: rgba(148, 163, 184, 0.28);
+      }
+
       @media (max-width: 560px) {
         .signup-brand {
-          position: static;
-          margin: 18px auto 0;
+          width: clamp(96px, 38vw, 130px);
+          margin-bottom: 14px;
+        }
+
+        .or {
+          gap: 10px;
+          margin: 14px 0;
         }
       }
     </style>
   </head>
   <body>
-    <a class="signup-brand" href="index.html" aria-label="Stackly home">
-      <img src="./Images/Stackly_logo.webp" alt="Stackly Logo" />
-    </a>
     <a href="index.html" class="back-home">
       <i class="fa-solid fa-arrow-left"></i> Back to Home
     </a>
 
     <div class="container signup-container">
       <div class="logo">
+        <a class="signup-brand" href="index.html" aria-label="Stackly home">
+          <img src="./Images/Stackly_logo.webp" alt="Stackly Logo" />
+        </a>
         <h2>Create Account</h2>
         <p>Join the Stackly Supply Chain Management Portal</p>
       </div>
@@ -102,6 +129,9 @@
           <option value="vendor">Vendor</option>
           <option value="operations">Operations</option>
         </select>
+        <button type="submit" class="login-btn">Create Account</button>
+
+        <h3 class="or">or</h3>
 
         <a
           href="https://accounts.google.com/"
@@ -112,8 +142,7 @@
           <i class="fa-brands fa-google"></i> Sign Up with Google
         </a>
 
-        <button type="submit" class="login-btn">Create Account</button>
-
+       
         <p class="signup-text">
           Already have an account?
           <a href="Login.html">Login</a>

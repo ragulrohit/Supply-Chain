@@ -12,9 +12,52 @@
   </head>
   <body>
     <main class="main-content">
+      <aside class="dashboard-sidebar">
+        <div class="dashboard-brand">
+          <a href="index.html" aria-label="Stackly home">
+            <img src="./Images/Stackly_logo.webp" alt="Stackly Logo" />
+          </a>
+          <a class="back-home-link" href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+          </a>
+        </div>
+        <!-- User Profile -->
+<div class="user-profile" aria-label="User profile">
+  <img
+    class="user-avatar"
+    src="./Images/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.webp"
+    alt="User avatar"
+    width="48"
+    height="48"
+  />
+  <div class="user-meta">
+    <p class="user-name" id="sidebarUserName">User</p>
+    <p class="user-role">Welcome Buddy</p>
+    <span class="user-status" title="Online" aria-label="Online"></span>
+  </div>
+</div>
+
+
+        <ul class="dashboard-menu">
+          <li class="active"><a href="vendor-dashboard.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+          <li><a href="pages/shipments.html"><i class="fa-solid fa-box"></i> Shipments</a></li>
+          <li><a href="pages/fleet-tracking.html"><i class="fa-solid fa-truck"></i> Fleet Tracking</a></li>
+          <li><a href="pages/warehouses.html"><i class="fa-solid fa-warehouse"></i> Warehouses</a></li>
+          <li><a href="pages/clients.html"><i class="fa-solid fa-users"></i> Clients</a></li>
+          <li><a href="pages/analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
+          <li><a href="pages/support.html"><i class="fa-solid fa-circle-question"></i> Support</a></li>
+          <li class="logout-menu-item"><a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i> Log out</a></li>
+        </ul>
+      </aside>
+
+      <section class="dashboard-main">
       <!-- Header -->
       <header class="topbar">
         <div>
+          <p class="vendor-welcome">
+            Welcome, <span id="vendorName">Vendor</span>
+          </p>
           <h1>Supply Chain Control Tower</h1>
 
           <p>
@@ -24,9 +67,7 @@
         </div>
 
         <div class="header-actions">
-          <button class="export-bt">Export Report</button>
-
-          <button class="logout-bt"><a class="back-home-l" href="Login.html">Log out</a></button>
+          <button class="export-btn">Export Report</button>
         </div>
       </header>
 
@@ -204,28 +245,8 @@
 
 </section>
 
-<div class="dashboard-brand">
-    <a href="index.html" aria-label="Stackly home">
-        <img src="./Images/Stackly_logo.webp" alt="Stackly Logo">
-    </a>
-    <a class="back-home-link" href="index.html">
-        <i class="fa-solid fa-arrow-left"></i>
-        Back to Home
-    </a>
-</div>
-
-<ul class="dashboard-menu">
-    <li class="active"><a href="vendor-dashboard.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
-    <li><a href="pages/shipments.html"><i class="fa-solid fa-box"></i> Shipments</a></li>
-    <li><a href="pages/fleet-tracking.html"><i class="fa-solid fa-truck"></i> Fleet Tracking</a></li>
-    <li><a href="pages/warehouses.html"><i class="fa-solid fa-warehouse"></i> Warehouses</a></li>
-    <li><a href="pages/clients.html"><i class="fa-solid fa-users"></i> Clients</a></li>
-    <li><a href="pages/analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
-    
-    <li><a href="pages/support.html"><i class="fa-solid fa-circle-question"></i> Support</a></li>
-</ul> 
-
       <script src="./vendor-dashboard.js"></script>
+      </section>
     </main>
   </body>
 </html>
