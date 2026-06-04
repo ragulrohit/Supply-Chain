@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Stackly SCM</title>
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="index.css" />
+     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="contact-page">
+       <nav class="heading">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="./Images/Stackly_logo.webp"
+              class="img"
+              alt="Stackly Logo"
+            />
+          </a>
+        </div>
+
+        <ul class="link" id="mainNav">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <!-- <li><a href="index.html#services">Services</a></li> -->
+          <li><a href="About.html">About</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Finance.html">Service</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <a href="Login.html" class="login-btn">
+          <i class="fa-solid fa-user"></i> Login
+        </a>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </button>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Supply Chain Support</span>
+          <h1>Contact our operations team</h1>
+          <p>
+            Reach Stackly for shipment updates, warehouse coordination, fleet
+            tracking issues, vendor support, and inventory service requests.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-btn" href="mailto:support@stacklyscm.com">
+              <i class="fa-solid fa-envelope"></i>
+              Email Support
+            </a>
+            <a class="secondary-btn" href="tel:+919876543210">
+              <i class="fa-solid fa-phone"></i>
+              Call Team
+            </a>
+          </div>
+        </div>
+
+        <div class="support-panel">
+          <div>
+            <i class="fa-solid fa-clock"></i>
+            <span>Response time</span>
+            <strong>Under 30 minutes</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Priority desk</span>
+            <strong>Live shipment delays</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-warehouse"></i>
+            <span>Coverage</span>
+            <strong>Warehouses and vendors</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-grid" aria-label="Contact options">
+        <article class="contact-card">
+          <i class="fa-solid fa-route"></i>
+          <h2>Shipment Queries</h2>
+          <p>
+            Ask about dispatch status, route changes, delivery ETA, missing POD,
+            and in-transit exceptions.
+          </p>
+          <a href="mailto:shipments@stacklyscm.com">shipments@stacklyscm.com</a>
+        </article>
+
+        <article class="contact-card">
+          <i class="fa-solid fa-boxes-stacked"></i>
+          <h2>Inventory Support</h2>
+          <p>
+            Report stock mismatch, SKU movement, damaged goods, reorder alerts,
+            or reconciliation requests.
+          </p>
+          <a href="mailto:inventory@stacklyscm.com">inventory@stacklyscm.com</a>
+        </article>
+
+        <article class="contact-card">
+          <i class="fa-solid fa-handshake-angle"></i>
+          <h2>Vendor Helpdesk</h2>
+          <p>
+            Connect with us for onboarding, GST documents, payment status,
+            compliance, and contract updates.
+          </p>
+          <a href="mailto:vendors@stacklyscm.com">vendors@stacklyscm.com</a>
+        </article>
+      </section>
+
+      <section class="info-strip" aria-label="Service highlights">
+        <div>
+          <i class="fa-solid fa-headset"></i>
+          <strong>24/7 Control Room</strong>
+          <span>Live support for urgent movement delays and vehicle issues.</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-file-invoice"></i>
+          <strong>Billing Desk</strong>
+          <span>GST invoice, freight billing, and vendor payment help.</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <strong>Regional Coordination</strong>
+          <span>Warehouse, hub, and last-mile team assistance by location.</span>
+        </div>
+      </section>
+
+      <section class="details-section">
+        <div class="office-card">
+          <span class="eyebrow">Visit Us</span>
+          <h2>Operations command center</h2>
+          <p>
+            Stackly SCM Tower, Logistics Park Road, Mumbai, Maharashtra 400001
+          </p>
+
+          <ul class="office-list">
+            <li>
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>+91 98765 43210</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <span>support@stacklyscm.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Monday to Saturday, 9:00 AM - 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="escalation-card">
+          <span class="eyebrow">Escalation</span>
+          <h2>When a shipment needs urgent action</h2>
+
+          <div class="timeline">
+            <div>
+              <strong>Level 1</strong>
+              <span>Raise a ticket with shipment ID and delivery location.</span>
+            </div>
+            <div>
+              <strong>Level 2</strong>
+              <span>Operations desk validates carrier, route, and warehouse data.</span>
+            </div>
+            <div>
+              <strong>Level 3</strong>
+              <span>Regional manager coordinates final action and confirmation.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="section-copy">
+          <span class="eyebrow">Raise a Ticket</span>
+          <h2>Tell us what needs attention</h2>
+          <p>
+            Share the topic, shipment ID, and a short note. The right operations
+            desk can pick it up faster with clear details.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            Topic
+            <select required>
+              <option value="">Select a topic</option>
+              <option>Shipment delay</option>
+              <option>Warehouse issue</option>
+              <option>Inventory mismatch</option>
+              <option>Vendor payment</option>
+              <option>Fleet tracking</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea
+              rows="5"
+              placeholder="Add shipment ID, location, and issue details"
+              required
+            ></textarea>
+          </label>
+
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Request
+          </button>
+        </form>
+      </section>
+
+      <section class="faq-section" aria-label="Frequently asked questions">
+        <div class="section-heading">
+          <span class="eyebrow">Quick Answers</span>
+          <h2>Common contact topics</h2>
+        </div>
+
+        <div class="faq-grid">
+          <article>
+            <h3>What details should I add for shipment support?</h3>
+            <p>
+              Include shipment ID, pickup city, delivery city, vehicle number,
+              current status, and the exact issue you want checked.
+            </p>
+          </article>
+          <article>
+            <h3>Who handles stock mismatch requests?</h3>
+            <p>
+              Inventory support reviews SKU count, inward records, dispatch
+              scans, damaged stock notes, and warehouse reconciliation.
+            </p>
+          </article>
+          <article>
+            <h3>Can vendors contact Stackly for payment updates?</h3>
+            <p>
+              Yes. Vendors can share invoice number, GST details, PO reference,
+              and delivery proof with the vendor helpdesk.
+            </p>
+          </article>
+          <article>
+            <h3>How fast are urgent tickets handled?</h3>
+            <p>
+              Critical shipment and fleet issues are routed to the control room
+              first, then escalated to regional operations when needed.
+            </p>
+          </article>
+        </div>
+      </section>
+
+       <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <div class="logo-box">
+              <a href="index.html">
+                <img
+                  src="./Images/Stackly_logo.webp"
+                  class="img"
+                  alt="Stackly Logo"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h2>STACKLY</h2>
+              <span>SUPPLY CHAIN</span>
+            </div>
+          </div>
+
+          <p class="footer-desc">
+            Delivering efficiency through intelligent logistics, warehouse
+            automation, fleet management,real-time supply chain visibility .
+          </p>
+
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            Chennai, Tamil Nadu, India – 600001
+          </div>
+
+          <div class="social-links">
+            <a href="Not found.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="Not found.html"><i class="fab fa-x-twitter"></i></a>
+            <a href="Not found.html"><i class="fab fa-instagram"></i></a>
+            <a href="Not found.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="Not found.html"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Features.html">Features</a></li>
+            <!-- <li><a href="index.html#services">Services</a></li> -->
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Finance.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h3>Services</h3>
+
+          <ul>
+            <li><a href="Not found.html">Shipment Tracking</a></li>
+            <li><a href="Not found.html">Fleet Management</a></li>
+            <li><a href="Not found.html">Warehouse Operations</a></li>
+            <li><a href="Not found.html">Inventory Control</a></li>
+            <li><a href="Not found.html">Procurement</a></li>
+            <li><a href="Not found.html">Supplier Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-column">
+          <h3>Resources</h3>
+
+          <ul>
+            <li><a href="Not found.html">Customer Portal</a></li>
+            <li><a href="Not found.html">Analytics Dashboard</a></li>
+            <li><a href="Not found.html">Reports</a></li>
+            <li><a href="Not found.html">Case Studies</a></li>
+            <li><a href="Not found.html">Support Center</a></li>
+            <li><a href="Not found.html">Documentation</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column" id="contact">
+          <h3>Contact & Support</h3>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            1800-STACKLY
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-mobile-screen"></i>
+            +91 98765 43210
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            support@stacklyscm.com
+          </div>
+
+          <div class="contact-item emergency">
+            <i class="fa-solid fa-headset"></i>
+            24/7 Logistics Support
+          </div>
+
+          <div class="hours">
+            <div>
+              <strong>Operations</strong>
+              <span>24 Hours</span>
+            </div>
+
+            <div>
+              <strong>Warehouse</strong>
+              <span>Mon - Sat</span>
+            </div>
+
+            <div class="highlight">
+              <strong>Tracking</strong>
+              <span>Real-Time Updates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </main>
+  </body>
+</html>

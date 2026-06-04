@@ -382,3 +382,86 @@ tbody tr:hover{
         transform:translateY(0);
     }
 }
+body {
+  background:
+    linear-gradient(135deg, rgba(8, 38, 78, 0.92), rgba(24, 119, 242, 0.62)),
+    #f4f7fb;
+  overflow-x: hidden;
+}
+
+.dashboard-brand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 28px;
+  padding: 12px 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.dashboard-brand a {
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+}
+
+.dashboard-brand img {
+  display: block;
+  width: 130px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.dashboard-brand .back-home-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 150px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.14);
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dashboard-brand .back-home-link:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 22px rgba(1, 6, 21, 0.18);
+}
+
+.dashboard-menu a {
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dashboard-menu a:hover,
+.dashboard-menu li.active a {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 10px 24px rgba(1, 6, 21, 0.18);
+  transform: translateX(4px);
+}
+
+.dashboard-menu i {
+  color: #8ff0bd;
+}
+
+.dashboard-menu a:hover i,
+.dashboard-menu li.active i {
+  color: #ffffff;
+}

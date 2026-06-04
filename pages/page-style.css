@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #16213a;
+  background:
+    linear-gradient(135deg, rgba(8, 38, 78, 0.88), rgba(24, 119, 242, 0.68)),
+    #f4f7fb;
+}
+
+body.settings-page {
+  background:
+    linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(99, 102, 241, 0.72)),
+    linear-gradient(225deg, rgba(33, 191, 115, 0.22), transparent 42%),
+    #eef2ff;
+}
+
+body.support-page {
+  background:
+    linear-gradient(135deg, rgba(5, 46, 63, 0.92), rgba(14, 165, 233, 0.68)),
+    linear-gradient(225deg, rgba(255, 183, 3, 0.22), transparent 42%),
+    #ecfeff;
+}
+
+.page-shell {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0;
+}
+
+.top-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 22px;
+  padding: 11px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.16);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.top-link:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.hero {
+  padding: 36px;
+  border-radius: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 58px rgba(8, 22, 48, 0.2);
+  backdrop-filter: blur(12px);
+  animation: pageRise 0.65s ease both;
+}
+
+.hero span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: #dff7eb;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.08;
+}
+
+.hero p {
+  max-width: 760px;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.info-card {
+  padding: 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(8, 22, 48, 0.12);
+  animation: pageRise 0.65s ease both;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 52px rgba(8, 22, 48, 0.18);
+}
+
+.action-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.action-panel div {
+  padding: 24px;
+  border-radius: 12px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(8, 22, 48, 0.14);
+  backdrop-filter: blur(12px);
+  animation: pageRise 0.7s ease both;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.action-panel div:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 22px 52px rgba(8, 22, 48, 0.2);
+}
+
+.action-panel i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: #111827;
+  background: #ffffff;
+  font-size: 20px;
+  transition: transform 0.25s ease;
+}
+
+.action-panel div:hover i {
+  transform: rotate(-4deg) scale(1.08);
+}
+
+.action-panel h2 {
+  font-size: 20px;
+}
+
+.action-panel p {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+@keyframes pageRise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-card i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: #1877f2;
+  background: #eaf2ff;
+  font-size: 20px;
+}
+
+.info-card:nth-child(2) i {
+  color: #21bf73;
+  background: #e9fff3;
+}
+
+.info-card:nth-child(3) i {
+  color: #d98b00;
+  background: #fff4d8;
+}
+
+.info-card h2 {
+  font-size: 20px;
+}
+
+.info-card p {
+  margin-top: 10px;
+  color: #617089;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .content-grid,
+  .action-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 26px;
+  }
+}

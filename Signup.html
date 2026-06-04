@@ -9,8 +9,47 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <title>Sign Up</title>
+    <style>
+      .signup-brand {
+        position: absolute;
+        top: 68px;
+        left: 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        min-height: 58px;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        transition: transform 0.25s ease;
+        z-index: 10;
+      }
+
+      .signup-brand:hover {
+        transform: translateY(-2px);
+      }
+
+      .signup-brand img {
+        display: block;
+        max-width: 120px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      @media (max-width: 560px) {
+        .signup-brand {
+          position: static;
+          margin: 18px auto 0;
+        }
+      }
+    </style>
   </head>
   <body>
+    <a class="signup-brand" href="index.html" aria-label="Stackly home">
+      <img src="./Images/Stackly_logo.webp" alt="Stackly Logo" />
+    </a>
     <a href="index.html" class="back-home">
       <i class="fa-solid fa-arrow-left"></i> Back to Home
     </a>

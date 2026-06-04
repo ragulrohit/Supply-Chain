@@ -46,3 +46,12 @@ document.querySelector(".export-btn")
     alert("Supply Chain Report Exported Successfully!");
 
 });
+(() => {
+  const logoutBtn = document.getElementById("logoutBtn");
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      window.location.href = "Login.html";
+    });
+  }
+})();
