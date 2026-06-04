@@ -750,3 +750,15 @@ body {
     font-size: 0.82rem;
   }
 }
+.social-links a {
+  color: #ffffff !important;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.social-links a:hover {
+  color: #1877f2 !important;
+  transform: translateY(-2px);
+}

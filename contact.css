@@ -951,7 +951,17 @@ body {
 
 .footer li a:hover,
 .social-links a:hover {
+  color: #1877f2 !important;
+}
+
+.footer-column ul li a {
   color: #ffffff !important;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #1877f2 !important;
+  padding-left: 4px;
 }
 
 .social-links {
