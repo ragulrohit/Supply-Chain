@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <a href="index.html" class="back-home">
+      <i class="fa-solid fa-arrow-left"></i> Back to Home
+    </a>
+
+    <div class="container signup-container">
+      <div class="logo">
+        <h2>Create Account</h2>
+        <p>Join the Stackly Supply Chain Management Portal</p>
+      </div>
+
+      <form id="signupForm" class="login-form">
+        <input type="text" placeholder="Full Name" required />
+
+        <input type="email" placeholder="Email Address" required />
+
+        <div class="password-field">
+          <input
+            type="password"
+            class="password-input"
+            placeholder="Create Password"
+            required
+          />
+          <button
+            type="button"
+            class="password-toggle"
+            aria-label="Show password"
+          >
+            <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+
+        <div class="password-field">
+          <input
+            type="password"
+            class="password-input"
+            placeholder="Confirm Password"
+            required
+          />
+          <button
+            type="button"
+            class="password-toggle"
+            aria-label="Show password"
+          >
+            <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+
+        <select id="accountType" required>
+          <option value="">Select Account Type</option>
+          <option value="vendor">Vendor</option>
+          <option value="operations">Operations</option>
+        </select>
+
+        <a
+          href="https://accounts.google.com/"
+          class="google-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-google"></i> Sign Up with Google
+        </a>
+
+        <button type="submit" class="login-btn">Create Account</button>
+
+        <p class="signup-text">
+          Already have an account?
+          <a href="Login.html">Login</a>
+        </p>
+      </form>
+
+      <div class="portal-features">
+        <div><i class="fa-solid fa-shield-halved"></i> Secure Access</div>
+        <div><i class="fa-solid fa-chart-line"></i> Live Insights</div>
+        <div><i class="fa-solid fa-truck-fast"></i> Smart Logistics</div>
+        <div><i class="fa-solid fa-warehouse"></i> Warehouse Control</div>
+      </div>
+    </div>
+
+    <script src="Signup.js"></script>
+  </body>
+</html>

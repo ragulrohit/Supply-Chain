@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header>
+      <nav class="heading">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="./images/Stackly_logo.webp"
+              class="img"
+              alt="Stackly Logo"
+            />
+          </a>
+        </div>
+
+        <ul class="link" id="mainNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Blog.html" class="active">Blog</a></li>
+          <li><a href="Finance.html">Finance</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="Login.html" class="login-btn">
+          <i class="fa-solid fa-user"></i> Login
+        </a>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <section class="blog-hero">
+      <div class="blog-hero-content">
+        <span>STACKLY INSIGHTS</span>
+        <h1>Supply Chain Blog</h1>
+        <p>
+          Practical ideas for warehouse operations, logistics visibility, vendor
+          coordination, and finance-led supply chain performance.
+        </p>
+
+        <div class="blog-hero-actions">
+          <a href="#latest" class="primary-action">Read Articles</a>
+          <a href="#video-story" class="secondary-action">Watch Flow</a>
+        </div>
+      </div>
+
+      <div class="blog-hero-panel" aria-label="Animated supply chain dashboard">
+        <div class="route-map">
+          <span class="route-point point-a"></span>
+          <span class="route-point point-b"></span>
+          <span class="route-point point-c"></span>
+          <span class="route-line line-one"></span>
+          <span class="route-line line-two"></span>
+          <span class="moving-truck"><i class="fa-solid fa-truck-fast"></i></span>
+        </div>
+
+        <div class="hero-stat">
+          <strong>98%</strong>
+          <span>shipment visibility</span>
+        </div>
+        <div class="hero-stat">
+          <strong>24/7</strong>
+          <span>operations support</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-stats">
+      <div>
+        <strong>14k+</strong>
+        <span>orders monitored</span>
+      </div>
+      <div>
+        <strong>32%</strong>
+        <span>faster exception response</span>
+      </div>
+      <div>
+        <strong>120+</strong>
+        <span>active supplier lanes</span>
+      </div>
+    </section>
+
+    <section class="blog-section" id="latest">
+      <div class="section-title">
+        <span>INSIGHTS</span>
+        <h2>Latest Articles</h2>
+      </div>
+
+      <div class="article-grid">
+        <article class="article-card featured-article">
+          <img
+            src="./Images/supply.webp"
+            alt="Supply chain operations with containers and logistics"
+          />
+          <div>
+            <span class="article-tag">Operations</span>
+            <h3>How connected warehouses reduce daily fulfillment delays</h3>
+            <p>
+              A practical look at labor planning, dock scheduling, and
+              exception alerts that help teams protect delivery promises.
+            </p>
+            <a href="Not found.html">Read More</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <i class="fa-solid fa-warehouse"></i>
+          <h3>Warehouse Flow</h3>
+          <p>
+            Practical ways to reduce handoff delays and keep fulfillment teams
+            aligned during peak demand.
+          </p>
+          <a href="Not found.html">Read More</a>
+        </article>
+
+        <article class="article-card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h3>Finance Visibility</h3>
+          <p>
+            How better spend tracking and forecasting can support stronger
+            supplier decisions.
+          </p>
+          <a href="Not found.html">Read More</a>
+        </article>
+
+        <article class="article-card">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Logistics Updates</h3>
+          <p>
+            Trends in shipment tracking, fleet planning, and real-time delivery
+            communication.
+          </p>
+          <a href="Not found.html">Read More</a>
+        </article>
+
+        <article class="article-card">
+          <i class="fa-solid fa-clipboard-check"></i>
+          <h3>Procurement Control</h3>
+          <p>
+            Simple ways to compare vendor performance, control purchase cycles,
+            and reduce urgent buying.
+          </p>
+          <a href="Not found.html">Read More</a>
+        </article>
+
+        <article class="article-card">
+          <i class="fa-solid fa-boxes-stacked"></i>
+          <h3>Inventory Accuracy</h3>
+          <p>
+            What cycle counts, barcode scans, and replenishment signals can do
+            for safer stock positions.
+          </p>
+          <a href="Not found.html">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="video-story" id="video-story">
+      <div class="video-copy">
+        <span>VIDEO ANIMATION</span>
+        <h2>Watch an order move from supplier to customer</h2>
+        <p>
+          This animated operations board shows how Stackly connects planning,
+          warehouse execution, dispatch, and delivery updates in one flow.
+        </p>
+
+        <ul class="video-points">
+          <li><i class="fa-solid fa-circle-check"></i> Live lane status</li>
+          <li><i class="fa-solid fa-circle-check"></i> Dock-ready alerts</li>
+          <li><i class="fa-solid fa-circle-check"></i> Finance-ready reports</li>
+        </ul>
+      </div>
+
+      <div class="video-frame" aria-label="Animated logistics video preview">
+        <div class="video-topbar">
+          <span></span>
+          <span></span>
+          <span></span>
+          <strong>Live Supply Chain Flow</strong>
+        </div>
+
+        <div class="video-grid">
+          <div class="video-node supplier">
+            <i class="fa-solid fa-industry"></i>
+            <span>Supplier</span>
+          </div>
+          <div class="video-node warehouse">
+            <i class="fa-solid fa-warehouse"></i>
+            <span>Warehouse</span>
+          </div>
+          <div class="video-node delivery">
+            <i class="fa-solid fa-truck"></i>
+            <span>Delivery</span>
+          </div>
+
+          <span class="pulse pulse-one"></span>
+          <span class="pulse pulse-two"></span>
+          <span class="scan-line"></span>
+        </div>
+
+        <div class="video-caption">
+          <strong>Order #SCM-2048</strong>
+          <span>Picked, packed, loaded, and on route</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-categories">
+      <div class="section-title">
+        <span>TOPICS</span>
+        <h2>Explore by Focus Area</h2>
+      </div>
+
+      <div class="category-grid">
+        <a href="Not found.html"><i class="fa-solid fa-route"></i> Transport</a>
+        <a href="Not found.html"><i class="fa-solid fa-box-open"></i> Inventory</a>
+        <a href="Not found.html"><i class="fa-solid fa-file-invoice-dollar"></i> Finance</a>
+        <a href="Not found.html"><i class="fa-solid fa-users-gear"></i> Vendors</a>
+      </div>
+    </section>
+
+    <section class="newsletter-panel">
+      <div>
+        <span>STAY UPDATED</span>
+        <h2>Get supply chain insights in your inbox</h2>
+        <p>
+          Monthly articles on better planning, fulfillment, logistics control,
+          and supplier performance.
+        </p>
+      </div>
+
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="footer-brand">
+            <div class="footer-logo-mark">
+              <a href="index.html">
+                <img
+                  src="./images/Stackly_logo.webp"
+                  class="img"
+                  alt="Stackly Logo"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h2>STACKLY</h2>
+              <span>SUPPLY CHAIN</span>
+            </div>
+          </div>
+
+          <p class="footer-desc">
+            Delivering efficiency through intelligent logistics, warehouse
+            automation, fleet management,real-time supply chain visibility
+          </p>
+
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            Chennai, Tamil Nadu, India - 600001
+          </div>
+
+          <div class="social-links">
+            <a href="Not found.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="Not found.html"><i class="fab fa-x-twitter"></i></a>
+            <a href="Not found.html"><i class="fab fa-instagram"></i></a>
+            <a href="Not found.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="Not found.html"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Features.html">Features</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Finance.html">Finance</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="Login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+
+          <ul>
+            <li><a href="Not found.html">Shipment Tracking</a></li>
+            <li><a href="Not found.html">Fleet Management</a></li>
+            <li><a href="Not found.html">Warehouse Operations</a></li>
+            <li><a href="Not found.html">Inventory Control</a></li>
+            <li><a href="Not found.html">Procurement</a></li>
+            <li><a href="Not found.html">Supplier Management</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Resources</h3>
+
+          <ul>
+            <li><a href="Not found.html">Customer Portal</a></li>
+            <li><a href="Not found.html">Analytics Dashboard</a></li>
+            <li><a href="Not found.html">Reports</a></li>
+            <li><a href="Not found.html">Case Studies</a></li>
+            <li><a href="Not found.html">Support Center</a></li>
+            <li><a href="Not found.html">Documentation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" id="contact">
+          <h3>Contact & Support</h3>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            1800-STACKLY
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-mobile-screen"></i>
+            +91 98765 43210
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            support@stacklyscm.com
+          </div>
+
+          <div class="contact-item emergency">
+            <i class="fa-solid fa-headset"></i>
+            24/7 Logistics Support
+          </div>
+
+          <div class="hours">
+            <div>
+              <strong>Operations</strong>
+              <span>24 Hours</span>
+            </div>
+
+            <div>
+              <strong>Warehouse</strong>
+              <span>Mon - Sat</span>
+            </div>
+
+            <div class="highlight">
+              <strong>Tracking</strong>
+              <span>Real-Time Updates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

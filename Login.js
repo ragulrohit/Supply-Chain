@@ -34,6 +34,23 @@ function showStatus(message, isError = false) {
   setTimeout(() => status.classList.remove("show"), 2600);
 }
 
+document.querySelectorAll(".password-toggle").forEach((button) => {
+  button.addEventListener("click", () => {
+    const field = button.closest(".password-field");
+    const input = field.querySelector(".password-input");
+    const icon = button.querySelector("i");
+    const isPassword = input.type === "password";
+
+    input.type = isPassword ? "text" : "password";
+    button.setAttribute(
+      "aria-label",
+      isPassword ? "Hide password" : "Show password",
+    );
+    icon.classList.toggle("fa-eye", !isPassword);
+    icon.classList.toggle("fa-eye-slash", isPassword);
+  });
+});
+
 /* Vendor Login */
 
 document.getElementById("vendorForm").addEventListener("submit", function (e) {
@@ -41,24 +58,17 @@ document.getElementById("vendorForm").addEventListener("submit", function (e) {
 
   const email = this.querySelector('input[type="email"]').value;
 
-  const password = this.querySelector('input[type="password"]').value;
+  const password = this.querySelector(".password-input").value;
 
   const vendorId = this.querySelector('input[type="text"]').value;
 
-  if (
-    email === "vendor@stackly.com" &&
-    password === "12345" &&
-    vendorId === "V001"
-  ) {
+  if (email && password && vendorId) {
     showStatus("Vendor login successful. Redirecting…");
     setTimeout(() => {
       globalThis.location.href = "vendor-dashboard.html";
     }, 700);
   } else {
-    showStatus(
-      "Invalid vendor credentials. Try vendor@stackly.com / 12345.",
-      true,
-    );
+    showStatus("Enter any email, password, and vendor ID to continue.", true);
     this.classList.add("shake");
     setTimeout(() => this.classList.remove("shake"), 500);
   }
@@ -73,18 +83,15 @@ document
 
     const email = this.querySelector('input[type="email"]').value;
 
-    const password = this.querySelector('input[type="password"]').value;
+    const password = this.querySelector(".password-input").value;
 
-    if (email === "admin@stackly.com" && password === "admin123") {
+    if (email && password) {
       showStatus("Operations login successful. Redirecting…");
       setTimeout(() => {
         globalThis.location.href = "operations.html";
       }, 700);
     } else {
-      showStatus(
-        "Invalid operations credentials. Try admin@stackly.com / admin123.",
-        true,
-      );
+      showStatus("Enter any email and password to continue.", true);
       this.classList.add("shake");
       setTimeout(() => this.classList.remove("shake"), 500);
     }
