@@ -203,7 +203,7 @@ tbody tr:hover{
     transition:.3s;
     display:flex;
     align-items:center;
-    /* gap:10px; */
+    gap:10px;
 }
 
 .dashboard-menu li:hover{
@@ -369,7 +369,7 @@ tbody tr:hover{
     display:flex;
     align-items:center;
     gap:10px;
-    width:0%;
+    width:100%;
 }
 
 @keyframes fadeUp{
@@ -464,4 +464,78 @@ body {
 .dashboard-menu a:hover i,
 .dashboard-menu li.active i {
   color: #ffffff;
+}
+
+.export-bt,
+.logout-bt {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:130px;
+    min-height:46px;
+    border:none;
+    padding:0 24px;
+    border-radius:12px;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.export-bt {
+    background:linear-gradient(135deg,#38bdf8,#8b5cf6);
+    color:#04111f;
+    box-shadow:0 16px 30px rgba(56,189,248,.2);
+}
+
+.logout-bt {
+    background:linear-gradient(135deg,#ff6200,#ff9d2f);
+    box-shadow:0 12px 28px rgba(255,98,0,.28);
+}
+
+.logout-bt a,
+.logout-bt .back-home-l {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    color:#ffffff !important;
+    text-decoration:none !important;
+}
+
+.export-bt:hover {
+    background:linear-gradient(135deg,#7dd3fc,#c4b5fd);
+    transform:translateY(-3px);
+    box-shadow:0 22px 42px rgba(56,189,248,.28);
+}
+
+.logout-bt:hover {
+    background:linear-gradient(135deg,#ff7a1a,#ffc04d);
+    transform:translateY(-3px);
+    box-shadow:0 18px 36px rgba(255,98,0,.38);
+}
+
+.logout-bt:hover a,
+.logout-bt .back-home-l:hover {
+    color:#ffffff !important;
+    text-decoration:none !important;
+}
+
+@media(max-width:768px){
+    .header-actions{
+        display:grid;
+        grid-template-columns:1fr;
+        width:100%;
+        gap:12px;
+    }
+
+    .export-bt,
+    .logout-bt{
+        width:100%;
+    }
 }
