@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap");
 
 :root {
   --nav-bg: #010615e1;
@@ -9,6 +9,8 @@
   --surface: #ffffff;
   --muted: #5b667a;
   --shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  --font-ui: "Outfit", "Poppins", Arial, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
 }
 
 * {
@@ -23,6 +25,7 @@ body {
   /* background: linear-gradient(180deg, #578bd3c7 0%, #dfe9fb 100%);
   font-family: "Poppins", Arial, sans-serif;
   color: #172033; */
+  font-family: var(--font-ui);
   line-height: 1.5;
 }
 img {
@@ -173,6 +176,13 @@ a {
   min-height: 76px;
   padding-left: clamp(18px, 4vw, 60px) !important;
   padding-right: clamp(18px, 4vw, 60px) !important;
+}
+
+.heading,
+.heading a,
+.heading button {
+  font-family: var(--font-ui);
+  letter-spacing: 0.01em;
 }
 
 .heading .logo {

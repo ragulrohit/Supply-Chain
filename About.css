@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
 :root {
   --page-bg: linear-gradient(135deg, #07111f 0%, #111827 35%, #1e3a8a 100%);
   --panel-bg: rgba(8, 15, 30, 0.78);
@@ -225,6 +227,22 @@ body {
   .about-content h2 {
     font-size: 1.6rem;
   }
+}
+
+body,
+a,
+button,
+p {
+  font-family: "Outfit", Arial, sans-serif;
+}
+
+.about-content h1,
+.leader-content h1,
+.about-content h2,
+.leader-content h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 /* Larger responsive About and leadership typography */

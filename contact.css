@@ -1,7 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body,
+a,
+button,
+input,
+textarea {
+  font-family: "Outfit", Arial, sans-serif;
+}
+
+.hero h1,
+.section-heading h2,
+.footer h2,
+.footer h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 /* body {

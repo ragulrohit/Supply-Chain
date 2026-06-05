@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
 
 :root {
   --nav-bg: #010615e1;
@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
@@ -75,6 +75,7 @@ body {
 
 .logo h2 {
   color: #ffd700;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;

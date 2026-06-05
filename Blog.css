@@ -1,8 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
 body {
   background:
     linear-gradient(rgba(2, 6, 23, 0.88), rgba(2, 6, 23, 0.94)),
     url("./Images/Supply chain.webp") center top/cover fixed;
   color: #eff6ff;
+  font-family: "Outfit", Arial, sans-serif;
+}
+
+.blog-hero-content h1,
+.blog-hero-panel h2,
+.footer h2,
+.footer h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.heading,
+.heading a,
+.footer,
+.footer a {
+  font-family: "Outfit", Arial, sans-serif;
 }
 
 .heading {

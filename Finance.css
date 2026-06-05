@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
 :root {
   --page-bg: linear-gradient(135deg, #07111f 0%, #111827 35%, #1e3a8a 100%);
   --panel-bg: rgba(8, 15, 30, 0.78);
@@ -11,6 +13,16 @@
 body {
   background: var(--page-bg);
   color: var(--text-main);
+  font-family: "Outfit", Arial, sans-serif;
+}
+
+.hero-content h1,
+.hero-content h3,
+.showcase-card h2,
+.media-card h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .hero-content,

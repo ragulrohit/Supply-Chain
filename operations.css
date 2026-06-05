@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:"Outfit",sans-serif;
 }
 
 body{
@@ -518,12 +518,12 @@ tr:hover{
 
 .dashboard-brand{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     flex-direction:column;
     justify-content:flex-start;
     gap:10px;
     margin-bottom:28px;
-    padding:12px 10px;
+    padding:0 0 12px;
     max-width:100%;
     overflow:hidden;
 }
@@ -630,8 +630,17 @@ tr:hover{
 }
 
 .topbar h1{
+    font-family:"Playfair Display",Georgia,serif;
     font-size:40px;
     margin-bottom:10px;
+}
+
+.dashboard-brand,
+.dashboard-menu,
+.topbar p,
+.export-btn,
+.user-profile {
+    font-family:"Outfit",Arial,sans-serif;
 }
 
 .topbar p{
@@ -978,7 +987,7 @@ tr:hover{
 
   .dashboard-brand img {
     width: 118px;
-    margin: auto;
+    margin: 0;
   }
 
   .dashboard-menu {
