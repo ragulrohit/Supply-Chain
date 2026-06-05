@@ -13,6 +13,30 @@ function showStatus(message, isError = false) {
   setTimeout(() => status.classList.remove("show"), 2600);
 }
 
+function showCelebrationPopup(message) {
+  const existingPopup = document.querySelector(".celebration-popup-overlay");
+  if (existingPopup) {
+    existingPopup.remove();
+  }
+
+  const overlay = document.createElement("div");
+  overlay.className = "celebration-popup-overlay";
+
+  overlay.innerHTML = `
+    <div class="celebration-popup">
+      <div class="celebration-emoji">🎉</div>
+      <h2>Account Created!</h2>
+      <p>${message}</p>
+      <button type="button" class="popup-btn popup-btn-primary">OK</button>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+  overlay
+    .querySelector(".popup-btn")
+    .addEventListener("click", () => overlay.remove());
+}
+
 document.querySelectorAll(".password-toggle").forEach((button) => {
   button.addEventListener("click", () => {
     const field = button.closest(".password-field");
@@ -53,7 +77,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     return;
   }
 
-  alert("Account created successfully.");
+  showCelebrationPopup("Account created successfully.");
   showStatus("Account created successfully. Redirecting to login...");
   setTimeout(() => {
     globalThis.location.href = "Login.html";

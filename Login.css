@@ -444,3 +444,65 @@ select:focus {
     font-size: 24px;
   }
 }
+
+.celebration-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(2, 6, 23, 0.72);
+}
+
+.celebration-popup {
+  width: min(420px, 100%);
+  padding: 30px;
+  border: 1px solid rgba(125, 211, 252, 0.42);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 28px 70px rgba(2, 6, 23, 0.45);
+  animation: popupIn 0.25s ease both;
+}
+
+.celebration-emoji {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.celebration-popup h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.celebration-popup p {
+  margin-bottom: 22px;
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+.popup-btn {
+  min-width: 96px;
+  min-height: 42px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 18px;
+  background: #ffffff;
+  color: #075985;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

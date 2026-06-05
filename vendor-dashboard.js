@@ -6,6 +6,45 @@ const rememberedVendor = JSON.parse(
 );
 const vendorName = document.getElementById("vendorName");
 
+function showCelebrationPopup(message, options = {}) {
+    const existingPopup = document.querySelector(".celebration-popup-overlay");
+    if(existingPopup){
+        existingPopup.remove();
+    }
+
+    const overlay = document.createElement("div");
+    overlay.className = "celebration-popup-overlay";
+
+    const popup = document.createElement("div");
+    popup.className = "celebration-popup";
+
+    const actions = options.confirm
+        ? `<div class="celebration-popup-actions">
+            <button type="button" class="popup-btn popup-btn-secondary" data-popup-cancel>Cancel</button>
+            <button type="button" class="popup-btn popup-btn-primary" data-popup-confirm>Yes</button>
+          </div>`
+        : `<button type="button" class="popup-btn popup-btn-primary" data-popup-ok>OK</button>`;
+
+    popup.innerHTML = `
+        <div class="celebration-emoji">🎉</div>
+        <h2>${options.title || "Great News!"}</h2>
+        <p>${message}</p>
+        ${actions}
+    `;
+
+    overlay.appendChild(popup);
+    document.body.appendChild(overlay);
+
+    const closePopup = () => overlay.remove();
+
+    overlay.querySelector("[data-popup-ok]")?.addEventListener("click", closePopup);
+    overlay.querySelector("[data-popup-cancel]")?.addEventListener("click", closePopup);
+    overlay.querySelector("[data-popup-confirm]")?.addEventListener("click", () => {
+        closePopup();
+        options.onConfirm?.();
+    });
+}
+
 function getVendorNameFromEmail(email) {
     const namePart = email.split("@")[0].replace(/[._-]+/g, " ").trim();
 
@@ -33,7 +72,7 @@ if(vendorName){
 document.querySelector(".export-btn")
 .addEventListener("click", () => {
 
-    alert("Supply Chain Report Exported Successfully!");
+    showCelebrationPopup("Supply Chain Report Exported Successfully!");
 
 });
 
@@ -46,13 +85,14 @@ if(logoutLink){
 
         e.preventDefault();
 
-        const confirmLogout =
-            confirm("Are you sure you want to logout?");
-
-        if(confirmLogout){
+        showCelebrationPopup("Are you sure you want to logout?", {
+            title: "Confirm Logout",
+            confirm: true,
+            onConfirm: () => {
             sessionStorage.removeItem("vendorSession");
             window.location.href = "Login.html";
-        }
+            },
+        });
 
     });
 }
@@ -102,4 +142,3 @@ if (name) {
   const sidebarNameEl = document.getElementById('sidebarUserName');
   if (sidebarNameEl) sidebarNameEl.textContent = name;
 }
-
